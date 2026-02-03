@@ -113,10 +113,6 @@ a:hover {
   animation: blink 1s steps(2, start) infinite;
 }
 
-.commands > pre {
-  animation: terminal-text 1s steps(8) infinite;
-}
-
 @keyframes blink {
   to {
     visibility: hidden;
@@ -125,27 +121,28 @@ a:hover {
 
 .content {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   margin-left: 20px;
 }
 
-.content:hover {
+.proyecto {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
   animation: small 1s steps(60, start) infinite;
 }
 
 @keyframes small {
   0% {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
   }
   50% {
-    width: 50%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
   }
   100% {
-    width: 100%;
-    height: 50;
+    width: 100px;
+    height: 100px;
   }
 }
 
