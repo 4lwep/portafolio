@@ -24,10 +24,12 @@ body{
 
 body{
     height: 100vh;
+    color: #fff;
 }
 
-/*.bg{
-}*/
+hr{
+    border: solid #000 1px;
+}
 
 nav{
     display: flex;
@@ -55,17 +57,47 @@ a{
 }
 
 .profile{
-    display: flex;
-    flex-direction: row;
-    place-items: center;
-    justify-content: center;
+    width: 400px;
     gap: 20px;
     background-color: var(--primary-color);
     border-radius: 10px;
+    text-align: center;
 }
 
 .profile > img{
     width: 400px;
     border-radius: 9999px;
     padding: 20px;
+}
+
+.terminal{
+    width: 90%;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.terminal > img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.commands{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-5px);
+    font-size: small;
+    text-align: left;
+    padding: 5px;
+}
+
+.commands > p{
+    transition: 5s;
+}
+
+.commands > p > span{
+
 }
