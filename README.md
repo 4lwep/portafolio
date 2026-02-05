@@ -8,7 +8,7 @@ La finalidad de este trabajo es tener una plantilla para mostrar mis proyectos y
 
 ## ENLACE
 
-Es posible acceder a la página del portafolio pulsando [aquí](portafolio-nine-eosin-33.vercel.app)
+Es posible acceder a la página del portafolio pulsando [aquí](https://portafolio-nine-eosin-33.vercel.app/)
 
 ## ESTRUCTURA
 
