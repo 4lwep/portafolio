@@ -1,12 +1,5 @@
 :root {
-  --crt__width: 500px;
-  --crt__height: 500px;
-  --crt-light__color-first: #002000;
-  --crt-light__color-second: #000a00;
-  --crt-linear__color: #00200033;
-  --crt-linear__height: 5px;
   --crt-scan__color: #11221166;
-  --crt-text__color: greenyellow;
   --primary-color: rgba(147, 27, 53, 0.5);
   --primary-color-full: rgba(147, 27, 53);
 }
@@ -165,7 +158,7 @@ a:hover {
   animation: blink 0.07s steps(5, start) infinite;
 }
 
-.glow {
+.crt-screen::after {
   content: "";
   background: linear-gradient(
     to bottom,
