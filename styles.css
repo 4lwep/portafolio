@@ -864,10 +864,7 @@ footer {
 @media (max-width: 950px) {
   .projects-section {
     padding: 50px 10px;
-    /* Reduced padding */
-    width: 100%;
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
   }
 }
 
