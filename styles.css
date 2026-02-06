@@ -655,7 +655,7 @@ a:hover {
   font-size: 16px;
   font-family: "Courier New", monospace;
   color: var(--text-color);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.01);
   border: 2px solid rgba(147, 27, 53, 0.5);
   border-radius: 8px;
   outline: none;
