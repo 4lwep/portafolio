@@ -3,8 +3,61 @@
   --primary-color: rgba(147, 27, 53, 0.5);
   --primary-color-full: rgba(147, 27, 53);
   --text-color: #fff;
+  --text-contrast: #000;
   --bg-color: #262626;
   --bg-final-color: #000;
+  --bg-grid-color: #333;
+  --border-color: #fff;
+  --border-secondary: rgba(255, 255, 255, 0.3);
+  --input-bg: rgba(0, 0, 0, 0.5);
+}
+
+body:has(#theme-toggle:checked) {
+  --crt-scan__color: #fff;
+  --primary-color: rgba(180, 60, 90, 0.5);
+  --primary-color-full: rgba(147, 27, 53);
+  --text-color: #1a1a1a;
+  --text-contrast: #fff;
+  --bg-color: #f0f0f0;
+  --bg-final-color: #e0e0e0;
+  --bg-grid-color: #d0d0d0;
+  --border-color: #333;
+  --border-secondary: rgba(0, 0, 0, 0.3);
+  --input-bg: rgba(255, 255, 255, 0.9);
+}
+
+#theme-toggle {
+  display: none;
+}
+
+.theme-toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle-label:hover {
+  border-color: var(--primary-color-full);
+  transform: scale(1.1);
+}
+
+.theme-toggle-label::before {
+  content: "☽";
+  font-size: 20px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+body:has(#theme-toggle:checked) .theme-toggle-label::before {
+  content: "☀";
 }
 
 * {
@@ -94,7 +147,7 @@ a:hover {
 .commands {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: var(--bg-final-color);
   width: 100%;
   height: 100%;
   transform: translateY(-5px);
@@ -110,7 +163,7 @@ a:hover {
 .content {
   width: 100%;
   margin-left: 20px;
-  background-color: #000;
+  background-color: var(--bg-final-color);
 }
 
 .content > img {
@@ -135,6 +188,7 @@ a:hover {
   justify-content: center;
   width: 100%;
   padding: 150px;
+  color: #fff;
 }
 
 .crt-screen {
@@ -142,7 +196,7 @@ a:hover {
   width: 60vw;
   height: 70vh;
   padding: 20px;
-  border: 1px solid #fff;
+  border: 1px solid var(--border-color);
   box-shadow:
     0 0 30px var(--primary-color),
     inset 0 0 20px rgba(157, 27, 53, 0.2);
@@ -186,7 +240,7 @@ a:hover {
 }
 
 .terminal-text > h2 {
-  border-bottom: solid 4px #fff;
+  border-bottom: solid 4px var(--border-color);
   padding: 10px;
 }
 
@@ -459,7 +513,7 @@ a:hover {
   place-items: center;
   width: 300px;
   padding: 30px;
-  background-color: #000;
+  background-color: var(--bg-final-color);
   border-radius: 5px;
   border: solid var(--text-color) 1px;
 }
