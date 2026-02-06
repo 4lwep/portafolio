@@ -322,7 +322,7 @@ a:hover {
 .blog-entry-list {
   display: flex;
   flex-direction: row;
-  width: 100px;
+  width: 10px;
   overflow: hidden;
   border-right: 4px solid var(--blog-list-border);
   transition: 0.5s;
@@ -333,7 +333,7 @@ a:hover {
 }
 
 .blog-entry-list:hover {
-  width: 3000px;
+  width: 20%;
 }
 
 .blog-entry-list>h2 {
@@ -368,6 +368,9 @@ a:hover {
 }
 
 .entry-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -848,7 +851,30 @@ footer {
   }
 }
 
+@media (max-width: 1350px) {
+  .blog-entry-list:hover {
+    width: 30%;
+  }
+
+  .entry-info>img {
+    width: 100px;
+  }
+
+  .entry-info {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 910px) {
+
+  .blog-entry-list:hover {
+    width: 40%;
+  }
+
+  .entry-info {
+    width: 80px;
+  }
+
   .profile {
     width: 100%;
   }
@@ -869,31 +895,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .inicio {
-    flex-direction: column;
-  }
-
-  .proyecto {
-    display: none;
-  }
-
-  .projects-section>h2 {
-    padding-bottom: 40px;
-  }
-
-  .project-entry {
-    width: 100%;
-    max-width: 300px;
-    overflow: hidden;
-  }
-
+@media (max-width: 775px) {
   .blog-section {
     padding: 50px 10px;
   }
@@ -937,10 +939,53 @@ footer {
 
   .entry-info {
     text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .entry-info>img {
     width: 100px;
+  }
+
+  .blog-entry-list>h2 {
+    text-align: center;
+    writing-mode: horizontal-tb;
+  }
+
+  .blog-entry-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-right: 4px solid var(--blog-list-border);
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .inicio {
+    flex-direction: column;
+  }
+
+  .proyecto {
+    display: none;
+  }
+
+  .projects-section>h2 {
+    padding-bottom: 40px;
+  }
+
+  .project-entry {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
   }
 
   .contact {
