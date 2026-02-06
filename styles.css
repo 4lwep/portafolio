@@ -179,7 +179,7 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-.inicio {
+.start {
   display: flex;
   flex-direction: row;
 }
@@ -236,7 +236,7 @@ a:hover {
   width: 100%;
 }
 
-.proyecto {
+.project {
   display: flex;
   align-items: center;
   place-items: center;
@@ -379,16 +379,16 @@ a:hover {
 }
 
 /*Cubos*/
-.proyectos,
+.projects,
 .blog,
-.sobre-mi {
+.aboutme {
   position: relative;
   cursor: pointer;
 }
 
-.proyectos pre,
+.projects pre,
 .blog pre,
-.sobre-mi pre {
+.aboutme pre {
   transition: 0.4s ease;
 }
 
@@ -401,16 +401,16 @@ a:hover {
   z-index: 10;
 }
 
-.proyectos:hover .cube-3d,
+.projects:hover .cube-3d,
 .blog:hover .cube-3d,
-.sobre-mi:hover .cube-3d {
+.aboutme:hover .cube-3d {
   transform: translate(-50%, -50%) rotateX(-20deg) rotateY(25deg) scale(1);
   animation: cubeFloat 3s ease-in-out infinite;
 }
 
-.proyectos:hover pre,
+.projects:hover pre,
 .blog:hover pre,
-.sobre-mi:hover pre {
+.aboutme:hover pre {
   opacity: 0.15;
   transform: scale(0.95);
 }
@@ -520,9 +520,9 @@ a:hover {
 }
 
 /* Animación de salida */
-.proyectos:not(:hover) .cube-3d,
+.projects:not(:hover) .cube-3d,
 .blog:not(:hover) .cube-3d,
-.sobre-mi:not(:hover) .cube-3d {
+.aboutme:not(:hover) .cube-3d {
   animation: cubeExit 0.4s ease forwards;
 }
 
@@ -961,7 +961,7 @@ footer {
     text-align: center;
   }
 
-  .proyecto {
+  .project {
     display: none;
   }
 
