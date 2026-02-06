@@ -61,4 +61,20 @@ Aquí se puede ver la versión de escritorio
 
 ![](assets/contacto_mobile.png)
 
-Aquí se puede ver la versión móvil
+Aquí se puede ver la versión móvil.
+
+Mi página web además cuenta con la opción de cambiar el tema entre claro y oscuro a preferencia del usuario. Todas las capturas anteriores pertenecían al modo oscuro que es el por defecto, aquí hay algunas capturas del modo claro:
+
+#### ESCRITORIO
+
+![](assets/inicio_desktop_claro.png)
+![](assets/proyectos_desktop_claro.png)
+![](assets/blog_desktop_claro.png)
+![](assets/contacto_desktop_claro.png)
+
+#### MÓVIL
+
+![](assets/inicio_mobile_claro.png)
+![](assets/proyectos_mobile_claro.png)
+![](assets/blog_mobile_claro.png)
+![](assets/contacto_mobile_claro.png)
