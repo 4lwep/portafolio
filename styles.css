@@ -11,31 +11,28 @@
   --border-color: #fff;
   --border-secondary: rgba(255, 255, 255, 0.3);
   --input-bg: rgba(0, 0, 0, 0.5);
-
-  /* New Variables */
   --grid-line-color: #333;
   --hr-border-color: #000;
   --link-hover-color: #aaaaaa;
 
-  /* CRT Screen */
+  /* Pantalla CRT */
   --crt-bg-color: rgba(0, 0, 0, 0.8);
   --crt-gradient-start: rgba(157, 27, 53, 0.3);
   --crt-scan-line-color: rgba(0, 0, 0, 1);
-  /* Was using --crt-scan__color which is #000 */
   --crt-inset-shadow: rgba(157, 27, 53, 0.2);
 
   /* Blog */
   --blog-list-border: #fff;
   --blog-entry-border: #fff;
 
-  /* Cube */
+  /* Cubo */
   --cube-face-bg: rgba(0, 0, 0, 0.85);
   --cube-face-border-dashed: rgba(255, 255, 255, 0.3);
   --cube-face-border-solid: rgba(255, 255, 255, 0.15);
   --cube-gradient-end: rgba(100, 15, 35, 0.9);
   --cube-text-glow: #fff;
 
-  /* Contact Form */
+  /* Formulario de contacto */
   --form-bg-gradient-start: rgba(147, 27, 53, 0.3);
   --form-bg-gradient-end: rgba(0, 0, 0, 0.6);
   --form-shadow-color: rgba(147, 27, 53, 0.3);
@@ -60,13 +57,11 @@ body:has(#theme-toggle:checked) {
   --border-color: #333;
   --border-secondary: rgba(0, 0, 0, 0.3);
   --input-bg: rgba(255, 255, 255, 0.9);
-
-  /* New Variables Light Mode */
   --grid-line-color: #d0d0d0;
   --hr-border-color: #ccc;
   --link-hover-color: #666;
 
-  /* CRT Screen */
+  /* Pantalla CRT */
   --crt-bg-color: rgba(255, 255, 255, 0.8);
   --crt-gradient-start: rgba(220, 20, 60, 0.1);
   --crt-scan-line-color: rgba(255, 255, 255, 0.8);
@@ -76,14 +71,14 @@ body:has(#theme-toggle:checked) {
   --blog-list-border: #333;
   --blog-entry-border: #333;
 
-  /* Cube */
+  /* Cubo */
   --cube-face-bg: rgba(255, 255, 255, 0.9);
   --cube-face-border-dashed: rgba(0, 0, 0, 0.3);
   --cube-face-border-solid: rgba(0, 0, 0, 0.15);
   --cube-gradient-end: rgba(200, 0, 40, 0.9);
   --cube-text-glow: #000;
 
-  /* Contact Form */
+  /* Formulario de contacto */
   --form-bg-gradient-start: rgba(220, 20, 60, 0.1);
   --form-bg-gradient-end: rgba(255, 255, 255, 0.8);
   --form-shadow-color: rgba(220, 20, 60, 0.1);
@@ -911,10 +906,13 @@ footer {
   }
 
   .blog-entry-list {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     border-right: none;
     border-bottom: 4px solid #fff;
     padding: 20px;
+    border-right: none;
   }
 
   .blog-entry-list:hover {
@@ -923,43 +921,36 @@ footer {
 
   .blog-entry-list>h2 {
     writing-mode: horizontal-tb;
-    padding-right: 0;
+    text-align: left;
     padding-bottom: 10px;
-    text-align: center;
-    /* Center text on mobile */
   }
 
   .entry-content {
-    width: 100%;
-    height: auto;
     max-height: 400px;
-    /* Increased slightly */
-    overflow-y: scroll;
   }
 
   .entry-info {
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-around;
     width: 100%;
   }
 
   .entry-info>img {
     width: 100px;
   }
+}
 
-  .blog-entry-list>h2 {
-    text-align: center;
-    writing-mode: horizontal-tb;
-  }
-
-  .blog-entry-list {
+@media (max-width: 550px) {
+  .nav-links {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 890px) {
+  .project-entry {
     width: 100%;
+    max-width: 500px;
     overflow: hidden;
-    border-right: 4px solid var(--blog-list-border);
-    transition: none;
   }
 }
 
@@ -970,22 +961,12 @@ footer {
     text-align: center;
   }
 
-  .inicio {
-    flex-direction: column;
-  }
-
   .proyecto {
     display: none;
   }
 
   .projects-section>h2 {
     padding-bottom: 40px;
-  }
-
-  .project-entry {
-    width: 100%;
-    max-width: 300px;
-    overflow: hidden;
   }
 
   .contact {
