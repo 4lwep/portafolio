@@ -4,6 +4,7 @@
   --primary-color-full: rgba(147, 27, 53);
   --text-color: #fff;
   --bg-color: #262626;
+  --bg-final-color: #000;
 }
 
 * {
@@ -22,6 +23,8 @@ body {
     linear-gradient(to right, #333 1px, transparent 1px);
   background-size: 50px 50px;
   font-family: "Courier New";
+  animation: changeBackgroundScroll;
+  animation-timeline: scroll(root y);
 }
 
 body {
@@ -546,5 +549,14 @@ a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes changeBackgroundScroll {
+  from {
+    background-color: var(--bg-color);
+  }
+  to {
+    background-color: var(--bg-final-color);
   }
 }
