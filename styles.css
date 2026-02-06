@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
+
 :root {
   --crt-scan__color: #000;
   --primary-color: rgba(147, 27, 53, 0.5);
@@ -192,7 +194,7 @@ a:hover {
   text-align: center;
 }
 
-.profile>img {
+.profile > img {
   width: 400px;
   padding: 20px;
 }
@@ -201,9 +203,10 @@ a:hover {
   width: 90%;
   margin: 20px;
   padding-bottom: 20px;
+  font-family: "Cascadia Code", sans-serif;
 }
 
-.terminal>img {
+.terminal > img {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -221,7 +224,7 @@ a:hover {
   padding: 5px;
 }
 
-.commands>p>span {
+.commands > p > span {
   animation: blink 1s steps(2, start) infinite;
 }
 
@@ -232,7 +235,7 @@ a:hover {
   border: solid 2px var(--border-color);
 }
 
-.content>img {
+.content > img {
   width: 100%;
 }
 
@@ -276,7 +279,10 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(var(--crt-gradient-start) 0.1em, transparent 0.1em);
+  background: linear-gradient(
+    var(--crt-gradient-start) 0.1em,
+    transparent 0.1em
+  );
   background-size: 100% 0.2em;
   pointer-events: none;
   animation: blink 0.07s steps(5, start) infinite;
@@ -284,10 +290,12 @@ a:hover {
 
 .crt-screen::after {
   content: "";
-  background: linear-gradient(to bottom,
-      transparent,
-      transparent 80%,
-      var(--crt-scan__color) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 80%,
+    var(--crt-scan__color) 100%
+  );
   width: 100%;
   height: 100%;
   position: absolute;
@@ -302,7 +310,7 @@ a:hover {
   z-index: 4;
 }
 
-.terminal-text>h2 {
+.terminal-text > h2 {
   border-bottom: solid 4px var(--border-color);
   padding: 10px;
 }
@@ -331,13 +339,13 @@ a:hover {
   width: 20%;
 }
 
-.blog-entry-list>h2 {
+.blog-entry-list > h2 {
   text-align: right;
   writing-mode: sideways-lr;
   padding-right: 20px;
 }
 
-.blog-entry-list:hover+.blog-entry-list>h2 {
+.blog-entry-list:hover + .blog-entry-list > h2 {
   display: none;
 }
 
@@ -348,11 +356,11 @@ a:hover {
   padding: 30px;
 }
 
-.entry-content>h2 {
+.entry-content > h2 {
   border-bottom: 1px solid var(--blog-entry-border);
 }
 
-.entry-content>p {
+.entry-content > p {
   text-align: justify;
   padding: 20px 0;
 }
@@ -369,11 +377,11 @@ a:hover {
   padding: 20px;
 }
 
-.entry-info>img {
+.entry-info > img {
   width: 200px;
 }
 
-.entry-info>p {
+.entry-info > p {
   text-align: center;
   font-size: 12px;
 }
@@ -432,9 +440,11 @@ a:hover {
 .cube-face.left,
 .cube-face.top,
 .cube-face.bottom {
-  background: linear-gradient(135deg,
-      var(--primary-color-full) 0%,
-      var(--cube-gradient-end) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color-full) 0%,
+    var(--cube-gradient-end) 100%
+  );
   border: 2px solid var(--border-secondary);
 }
 
@@ -508,7 +518,6 @@ a:hover {
 
 /* Animación de flotación */
 @keyframes cubeFloat {
-
   0%,
   100% {
     transform: translate(-50%, -50%) rotateX(-20deg) rotateY(25deg);
@@ -531,7 +540,7 @@ a:hover {
   width: 100%;
 }
 
-.projects-section>h2 {
+.projects-section > h2 {
   text-align: center;
   font-size: 40px;
   padding-bottom: 100px;
@@ -583,7 +592,7 @@ a:hover {
   border: solid var(--text-color) 1px;
 }
 
-.project-entry>* {
+.project-entry > * {
   padding: 10px;
 }
 
@@ -596,12 +605,12 @@ a:hover {
   cursor: pointer;
 }
 
-.project-entry>p {
+.project-entry > p {
   text-align: center;
   height: 80%;
 }
 
-.project-entry>h2 {
+.project-entry > h2 {
   text-align: center;
 }
 
@@ -612,7 +621,7 @@ a:hover {
   padding: 100px 20px;
 }
 
-.contact>h2 {
+.contact > h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -624,9 +633,11 @@ a:hover {
   width: 100%;
   max-width: 500px;
   padding: 40px;
-  background: linear-gradient(145deg,
-      var(--form-bg-gradient-start) 0%,
-      var(--form-bg-gradient-end) 100%);
+  background: linear-gradient(
+    145deg,
+    var(--form-bg-gradient-start) 0%,
+    var(--form-bg-gradient-end) 100%
+  );
   backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid var(--form-border);
@@ -635,7 +646,7 @@ a:hover {
     inset 0 0 60px var(--form-inset-shadow);
 }
 
-.contact form>label {
+.contact form > label {
   padding-top: 15px;
   font-size: 0.9rem;
   letter-spacing: 2px;
@@ -643,8 +654,8 @@ a:hover {
   text-transform: uppercase;
 }
 
-.contact form>input,
-.contact>form>textarea {
+.contact form > input,
+.contact > form > textarea {
   width: 100%;
   padding: 15px 20px;
   font-size: 16px;
@@ -657,41 +668,43 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.contact form>input::placeholder,
-.contact>form>textarea::placeholder {
+.contact form > input::placeholder,
+.contact > form > textarea::placeholder {
   color: var(--input-placeholder-color);
   font-style: italic;
 }
 
-.contact form>input:hover,
-.contact>form>textarea:hover {
+.contact form > input:hover,
+.contact > form > textarea:hover {
   border-color: var(--primary-color-full);
   background: var(--bg-final-color);
 }
 
-.contact form>input:focus,
-.contact>form>textarea:focus {
+.contact form > input:focus,
+.contact > form > textarea:focus {
   border-color: var(--primary-color-full);
   background: var(--bg-final-color);
 }
 
-.contact>form>textarea {
+.contact > form > textarea {
   height: 150px;
   resize: vertical;
   min-height: 100px;
   max-height: 300px;
 }
 
-.contact>form>button {
+.contact > form > button {
   margin-top: 25px;
   width: 100%;
   font-size: 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 18px 40px;
-  background: linear-gradient(135deg,
-      var(--primary-color-full) 0%,
-      var(--button-gradient-end) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color-full) 0%,
+    var(--button-gradient-end) 100%
+  );
   border-radius: 8px;
   border: 2px solid var(--primary-color-full);
   color: var(--text-color);
@@ -701,26 +714,28 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.contact>form>button::before {
+.contact > form > button::before {
   content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg,
-      transparent,
-      var(--button-shine),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--button-shine),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
-.contact>form>button:hover {
+.contact > form > button:hover {
   transform: translateY(-3px);
   border-color: var(--button-hover-border);
 }
 
-.contact>form>button:hover::before {
+.contact > form > button:hover::before {
   left: 100%;
 }
 
@@ -737,7 +752,7 @@ footer {
   gap: 20px;
 }
 
-.link-box>img {
+.link-box > img {
   width: 100px;
   height: 100px;
 }
@@ -762,10 +777,12 @@ footer {
 
 .footer-line {
   height: 2px;
-  background: linear-gradient(90deg,
-      transparent,
-      var(--primary-color-full),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color-full),
+    transparent
+  );
   margin-bottom: 30px;
 }
 
@@ -851,7 +868,7 @@ footer {
     width: 30%;
   }
 
-  .entry-info>img {
+  .entry-info > img {
     width: 100px;
   }
 
@@ -861,7 +878,6 @@ footer {
 }
 
 @media (max-width: 910px) {
-
   .blog-entry-list:hover {
     width: 40%;
   }
@@ -874,7 +890,7 @@ footer {
     width: 100%;
   }
 
-  .profile>img {
+  .profile > img {
     width: 100%;
   }
 
@@ -919,7 +935,7 @@ footer {
     width: 100%;
   }
 
-  .blog-entry-list>h2 {
+  .blog-entry-list > h2 {
     writing-mode: horizontal-tb;
     text-align: left;
     padding-bottom: 10px;
@@ -933,7 +949,7 @@ footer {
     width: 100%;
   }
 
-  .entry-info>img {
+  .entry-info > img {
     width: 100px;
   }
 }
@@ -965,7 +981,7 @@ footer {
     display: none;
   }
 
-  .projects-section>h2 {
+  .projects-section > h2 {
     padding-bottom: 40px;
   }
 
@@ -973,7 +989,7 @@ footer {
     padding: 50px 10px;
   }
 
-  .contact>h2 {
+  .contact > h2 {
     font-size: 1.5rem;
   }
 
@@ -981,7 +997,7 @@ footer {
     padding: 20px;
   }
 
-  .link-box>img {
+  .link-box > img {
     width: 50px;
     height: 50px;
   }
