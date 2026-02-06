@@ -485,6 +485,56 @@ a:hover {
   text-align: center;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.contact > * {
+  padding: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.contact form > label {
+  padding-top: 30px;
+}
+
+.contact form > input {
+  padding: 20px;
+}
+
+.contact > form > input {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  border: solid 2px var(--primary-color-full);
+}
+
+.contact > form > textarea {
+  width: 500px;
+  height: 200px;
+  border: solid 2px var(--primary-color-full);
+}
+
+.contact > form > button {
+  margin-top: 30px;
+  width: 50%;
+  font-size: 18px;
+  padding: 20px;
+  background-color: var(--bg-final-color);
+  border-radius: 5px;
+  border: solid 5px var(--primary-color-full);
+  color: var(--text-color);
+}
+
 @keyframes scan-line {
   from {
     top: -100%;
